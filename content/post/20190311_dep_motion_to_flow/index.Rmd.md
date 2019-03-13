@@ -143,3 +143,5 @@ def projectPointCloud(pointclouds_list, K, h, w):
 
 	return img_coords, valid_mask
 ```
+
+The codes above are python implementation of [this github project](https://github.com/LucasSheng/dense-rgbd-visual-odometry)
