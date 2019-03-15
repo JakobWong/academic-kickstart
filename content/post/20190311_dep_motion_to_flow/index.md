@@ -8,10 +8,6 @@ authors = ["admin"]
 tags = ["3d reconstruction", "optical flow", "camera motion"]
 categories = ["vision"]
 
-[[gallery_item]]
-album = "img"
-image = "camera_int_and_ext.png"
-caption = "Camera Intrinsics and Extrinsics"
 +++
 
 Optical flow depicts the relative motion between pixels in image _1_ and pixels in pixels in image _2_. In computer vision, optical flows are usually represented by an array of size `[h, w, 2]`, where the _(i, j)_ th element `optical_flow[i,j,:]` is a 2-d flow vector describing the axis-wise motion of 2-d grid coordinates. The computation of optical flow between two images often requires finding the corresponding pixels between these images, which can be difficult in texture-less scenes. However, one can compute a relatively precise optical flow from image _1_ to image _2_ however difficult the scenario might be, as long as he know the depth map of image _1_ and the underlying camera motion from view point _1_ to view point _2_ we. Let's see how to do that!
